@@ -19,3 +19,10 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+
+*.styl
+*.html
+*.css
+*.config.js
+*.vue
+*.png
