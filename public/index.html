@@ -5,329 +5,89 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!--<link rel="icon" href="<%= BASE_URL %>favicon.ico">-->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/static.css">
+    <link rel="stylesheet" href="/static/css/reset.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_1445882_d3sp5ye97gu.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1445882_qz9spxz5qdc.css">
     <title>网易严选</title>
   </head>
   <script src="https://unpkg.com/swiper/js/swiper.js"> </script>
-  <script src="https://unpkg.com/better-scroll/dist/bscroll.min.js"></script>
+  <!-- <script src="https://unpkg.com/better-scroll/dist/bscroll.min.js"></script> -->
+  <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
   <body>
-    <div id="app">
-      <div class="page">
-        <div class="home native">
-          <!--头部区域-->
-          <div class="home-header">
-            <div class="header-search-login">
-              <img class="logo" src="./images/searchLogo.png"></img>
-              <i class="iconfont iconsousuo"></i>
-              <input type="text" class="searchInput" placeholder="搜索商品，共xxxx款好商品">
-              <button>登录</button>
-            </div>
-            <div class="header-nav wrapper">
-              <ul class="nav-list content">
-                <li class="nav-item "><a class="nav-active" href="##">推荐</a></li>
-                <li class="nav-item"><a href="##">居家生活</a></li>
-                <li class="nav-item"><a href="##">服饰鞋包</a></li>
-                <li class="nav-item"><a href="##">美食酒水</a></li>
-                <li class="nav-item"><a href="##">居家生活</a></li>
-                <li class="nav-item"><a href="##">服饰鞋包</a></li>
-                <li class="nav-item"><a href="##">美食酒水</a></li>
-                <li class="nav-item"><a href="##">居家生活</a></li>
-                <li class="nav-item"><a href="##">服饰鞋包</a></li>
-                <li class="nav-item"><a href="##">美食酒水</a></li>
-                <li class="nav-item"><a href="##">居家生活</a></li>
-              </ul>
-              <span class="toggle-arrow"><i class="iconfont icongeren"></i></span>
-            </div>
-          </div>
-          <div class="home-main">
-            <!--轮播区域-->
-            <div class="main-scroll swiper-container">
-              <div class="scroll-list swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./images/scroll-.jpeg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <li><img src="./images/scroll-2.png" alt=""></li>
-                </div>
-                <div class="swiper-slide">
-                  <li><img src="./images/scroll-3.png" alt=""></li>
-                </div>
-                <div class="swiper-slide">
-                  <li><img src="./images/scroll-4.png" alt=""></li>
-                </div>
-              </div>
-              <!-- 如果需要分页器 -->
-              <div class="swiper-pagination"></div>
-            </div>
-            <!--导航栏区域-->
-            <ul class="main-grow">
-              <li>
-                <i class="grow-icon"></i>
-                <span>网易自营品牌</span>
-              </li>
-              <li>
-                <i class="grow-icon"></i>
-                <span>30天无忧退货</span>
-              </li>
-              <li>
-                <i class="grow-icon"></i>
-                <span>48小时快速退款</span>
-              </li>
-            </ul>
-            <ul class="main-navbox">
-              <li class="nav-item">
-                <img src="./images/nav-item1.png" alt="">
-                <span>新品首发</span>
-              </li>
-              <li class="nav-item">
-                <img src="./images/nav-item2.png" alt="">
-                <span>新品首发</span>
-              </li>
-              <li class="nav-item">
-                <img src="./images/nav-item1.png" alt="">
-                <span>新品首发</span>
-              </li>
-              <li class="nav-item">
-                <img src="./images/nav-item2.png" alt="">
-                <span>新品首发</span>
-              </li>
-              <li class="nav-item">
-                <img src="./images/nav-item1.png" alt="">
-                <span>新品首发</span>
-              </li>
-              <li class="nav-item">
-                <img src="./images/nav-item2.png" alt="">
-                <span>新品首发</span>
-              </li>
-              <li class="nav-item">
-                <img src="./images/nav-item1.png" alt="">
-                <span>新品首发</span>
-              </li>
-              <li class="nav-item">
-                <img src="./images/nav-item2.png" alt="">
-                <span>新品首发</span>
-              </li>
-              <li class="nav-item">
-                <img src="./images/nav-item2.png" alt="">
-                <span>新品首发</span>
-              </li>
-              <li class="nav-item">
-                <img src="./images/nav-item2.png" alt="">
-                <span>新品首发</span>
-              </li>
-            </ul>
-            <!--新人专享礼-->
-            <div class="gift-container">
-              <p class="gift-title">- 新人专享礼 -</p>
-              <div class="gift-content">
-                <div class="gift-left">
-                  <span>新人专享礼包</span>
-                  <img src="./images/gift-left.png">
-                </div>
-                <div class="gift-right">
-                  <div class="gift-right-top">
-                    <div class="title">
-                      <span>福利社</span>
-                      <span>今日特价</span>
-                    </div>
-                    <img src="./images/gift-right-top.png">
-                  </div>
-                  <div class="gift-right-top gift-right-bottom">
-                    <div class="title">
-                      <span>新人拼团</span>
-                      <span>1元起包邮</span>
-                    </div>
-                    <img src="./images/gift-right-bottom.png">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--品牌制造商直供-->
-            <div class="make-container">
-              <div class="make-header">
-                <span>品牌制造商直供</span>
-                <span class="more">
-                  更多
-                   <i class="iconfont iconleimupinleifenleileibie"></i>
-                </span>
-              </div>
-              <div class="make-list">
-                <div class="make-item">
-                  <span>海外制造商</span>
-                  <div class="content">
-                    <span>34.9元起</span>
-                    <span>上新</span>
-                  </div>
-                </div>
-                <div class="make-item">
-                  <span>CK制造商</span>
-                  <div class="content">
-                    <span>34.9元起</span>
-                    <span>上新</span>
-                  </div>
-                </div>
-                <div class="make-item">
-                  <span>Nine West制造商</span>
-                  <div class="content">
-                    <span>34.9元起</span>
-                    <span></span>
-                  </div>
-                </div>
-                <div class="make-item">
-                  <span>新秀丽制造商</span>
-                  <div class="content">
-                    <span>34.9元起</span>
-                    <span></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="category native">category</div>
-        <div class="reco native">reco</div>
-        <div class="cart native">cart</div>
-        <div class="profile active native">
-          <div class="profile-header">
-            <i class="iconfont iconshouye"></i>
-            <span>网易严选</span>
-            <div class="header-right">
-              <i class="iconfont iconsousuo"></i>
-              <i class="iconfont icongouwuche"></i>
-            </div>
-          </div>
-          <div class="profile-main">
-            <div class="main-login">
-              <img src="./images/profile-logo.png">
-            </div>
-            <div class="main-loginWays">
-              <div class="btn-mobile btn">
-                <i class="iconfont iconweibiaoti1"></i>
-                手机号快捷登录
-              </div>
-              <div class="btn-email btn">
-                <i class="iconfont iconyouxiang"></i>
-                邮箱账号登录
-              </div>
-            </div>
-            <div class="main-footer">
-              <span>
-                <i class="iconfont iconweixin"></i>
-                微信
-              </span>
-              <span>|</span>
-              <span>
-                <i class="iconfont iconqq"></i>
-                QQ
-              </span>
-              <span>|</span>
-              <span>
-                <i class="iconfont iconweibo"></i>
-                微博
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="footer">
-        <ul class="footer-list">
-          <li class="footer-item on">
-            <i class="iconfont iconshouye"></i>
-            <span>首页</span>
-          </li>
-          <li class="footer-item">
-            <i class="iconfont iconleimupinleifenleileibie"></i>
-            <span>分类</span>
-          </li>
-          <li class="footer-item">
-            <i class="iconfont iconliaojiemodou"></i>
-            <span>识物</span>
-          </li>
-          <li class="footer-item">
-            <i class="iconfont icongouwuche"></i>
-            <span>购物车</span>
-          </li>
-          <li class="footer-item">
-            <i class="iconfont icongeren"></i>
-            <span>个人</span>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <div id="app"></div>
   </body>
   <script>
+    
+      window.onload=function () {
+          document.addEventListener('click', function(e) {
+             e.preventDefault();
+          });
 
-
-      window.onload=function (e) {
-          if(e && e.preventDefault){
-              e.preventDefault();
+          if ('addEventListener' in document) {
+              document.addEventListener('DOMContentLoaded', function () {
+                FastClick.attach(document.body);
+            }, false);
           }
-          //IE中组织浏览器行为
-          else{
-              window.event.returnValue=false;
-              return false;
-          }
-          let scroll = new BScroll('.wrapper',{
-              scrollX : true,
-              click: true
-          })
-
-//          let scroll1 = new BScroll('.wrapper1',{
-//              scrollY : true,
-//              click: true
-//          })
 
 //          点击显示对应主界面
           //获取所有footer/content节点、
-          const footerItems= window.document.querySelectorAll(".footer-item")
-          const pageItems= window.document.querySelectorAll("#app .page>div")
-          //遍历绑定事件
-          footerItems.forEach((item,i)=>{
-            item.addEventListener("click",()=>{
-                footerItems.forEach((item,i)=>{
-                    //排他
-                    item.classList.remove("on")
-                    console.log(pageItems[i])
-                    pageItems[i].classList.remove("active")
-                })
-                //当前高亮
-                item.classList.add("on")
-                pageItems[i].classList.add("active")
-            })
-          })
+        //   const footerItems= window.document.querySelectorAll(".footer-item")
+        //   const pageItems= window.document.querySelectorAll("#app .page>div")
+        //   //遍历绑定事件
+        //   footerItems.forEach((item,i)=>{
+        //     item.addEventListener("click",()=>{
+        //         footerItems.forEach((item,i)=>{
+        //             //排他
+        //             item.classList.remove("on")
+        //             console.log(pageItems[i])
+        //             pageItems[i].classList.remove("active")
+        //         })
+        //         //当前高亮
+        //         item.classList.add("on")
+        //         pageItems[i].classList.add("active")
+        //     })
+        //   })
 
           //点击显示对应导航条
           //获取所有footer/content节点、
-          const navActives= window.document.querySelectorAll(".nav-list .nav-item a")
-          const navItems= window.document.querySelectorAll(".nav-list .nav-item")
+        //   const navActives= window.document.querySelectorAll(".nav-list .nav-item a")
+        //   const navItems= window.document.querySelectorAll(".nav-list .nav-item")
           //遍历绑定事件
-          navItems.forEach((item,i)=>{
-              item.addEventListener("click",()=>{
-                  navActives.forEach((item,i)=>{
-                      //排他
-                      item.classList.remove("nav-active")
-                  })
-                  //当前高亮
-                  navActives[i].classList.add("nav-active")
+        //   navItems.forEach((item,i)=>{
+        //       item.addEventListener("click",()=>{
+        //           navActives.forEach((item,i)=>{
+        //               //排他
+        //               item.classList.remove("nav-active")
+        //           })
+        //           //当前高亮
+        //           navActives[i].classList.add("nav-active")
 
-              })
-          })
-
+        //       })
+        //   })
+          //点击显示导航列表
+        //   const toggleArrow=window.document.querySelector(".header-nav .toggle-arrow")
+        //   const navBox=window.document.querySelector(".header-nav .nav-box")
+        //   const wrapper=window.document.querySelector(".header-nav .wrapper")
+        //   console.log(toggleArrow,navBox)
+        //   toggleArrow.addEventListener("click",()=>{
+        //       toggleArrow.classList.toggle("arrowDown")
+        //       navBox.classList.toggle("wrapper-active")
+        //       wrapper.classList.toggle("wrapper-native")
+        //   })
           //swiper
-          var mySwiper = new Swiper ('.swiper-container', {
-              direction: 'horizontal', // 垂直切换选项
-              loop: true, // 循环模式选项
+        //   var mySwiper = new Swiper ('.swiper-container', {
+        //       direction: 'horizontal', // 垂直切换选项
+        //       loop: true, // 循环模式选项
+        //       // 如果需要分页器
+        //       pagination: {
+        //         el: '.swiper-pagination',
+        //       },
+        //   })
 
-              // 如果需要分页器
-              pagination: {
-                  el: '.swiper-pagination',
-              },
-          })
-
-      }
+        //   let scroll = new BScroll('.wrapper',{
+        //         scrollX : true,
+        //         click: true
+        //   })
+      } 
   </script>
-
 </html>
