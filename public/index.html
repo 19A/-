@@ -4,14 +4,90 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title>wangyi0</title>
+    <!--<link rel="icon" href="<%= BASE_URL %>favicon.ico">-->
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1445882_qz9spxz5qdc.css">
+    <title>网易严选</title>
   </head>
+  <script src="https://unpkg.com/swiper/js/swiper.js"> </script>
+  <!-- <script src="https://unpkg.com/better-scroll/dist/bscroll.min.js"></script> -->
+  <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
   <body>
-    <noscript>
-      <strong>We're sorry but wangyi0 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
     <div id="app"></div>
-    <!-- built files will be auto injected -->
   </body>
+  <script>
+    
+      window.onload=function () {
+          document.addEventListener('click', function(e) {
+             e.preventDefault();
+          });
+
+          if ('addEventListener' in document) {
+              document.addEventListener('DOMContentLoaded', function () {
+                FastClick.attach(document.body);
+            }, false);
+          }
+
+//          点击显示对应主界面
+          //获取所有footer/content节点、
+        //   const footerItems= window.document.querySelectorAll(".footer-item")
+        //   const pageItems= window.document.querySelectorAll("#app .page>div")
+        //   //遍历绑定事件
+        //   footerItems.forEach((item,i)=>{
+        //     item.addEventListener("click",()=>{
+        //         footerItems.forEach((item,i)=>{
+        //             //排他
+        //             item.classList.remove("on")
+        //             console.log(pageItems[i])
+        //             pageItems[i].classList.remove("active")
+        //         })
+        //         //当前高亮
+        //         item.classList.add("on")
+        //         pageItems[i].classList.add("active")
+        //     })
+        //   })
+
+          //点击显示对应导航条
+          //获取所有footer/content节点、
+        //   const navActives= window.document.querySelectorAll(".nav-list .nav-item a")
+        //   const navItems= window.document.querySelectorAll(".nav-list .nav-item")
+          //遍历绑定事件
+        //   navItems.forEach((item,i)=>{
+        //       item.addEventListener("click",()=>{
+        //           navActives.forEach((item,i)=>{
+        //               //排他
+        //               item.classList.remove("nav-active")
+        //           })
+        //           //当前高亮
+        //           navActives[i].classList.add("nav-active")
+
+        //       })
+        //   })
+          //点击显示导航列表
+        //   const toggleArrow=window.document.querySelector(".header-nav .toggle-arrow")
+        //   const navBox=window.document.querySelector(".header-nav .nav-box")
+        //   const wrapper=window.document.querySelector(".header-nav .wrapper")
+        //   console.log(toggleArrow,navBox)
+        //   toggleArrow.addEventListener("click",()=>{
+        //       toggleArrow.classList.toggle("arrowDown")
+        //       navBox.classList.toggle("wrapper-active")
+        //       wrapper.classList.toggle("wrapper-native")
+        //   })
+          //swiper
+        //   var mySwiper = new Swiper ('.swiper-container', {
+        //       direction: 'horizontal', // 垂直切换选项
+        //       loop: true, // 循环模式选项
+        //       // 如果需要分页器
+        //       pagination: {
+        //         el: '.swiper-pagination',
+        //       },
+        //   })
+
+        //   let scroll = new BScroll('.wrapper',{
+        //         scrollX : true,
+        //         click: true
+        //   })
+      } 
+  </script>
 </html>
